@@ -1,0 +1,1046 @@
+/*
+-----------------------------------
+Theme Name: Resturent - Responsive Restaurant Template
+Author: Rumon078.
+Description: Restaurant Template.
+Version: 1.0
+Primary use: Restaurant, Cafe
+Support: rumon078102@gmail.com;
+-----------------------------------
+*/
+
+
+/* [Master Stylesheet]
+-----------------------------------
+1. General styles
+	1.1. Typography
+	1.2. Button Style
+	1.3. Transation Style
+	1.4. Hover Style
+	1.5. Total Background Images
+
+2. Header
+	2.1. Navigation Style
+
+3. Slider Area Style
+4. About
+5. Best Resturent Area Style
+6. Gallery Area Style
+7. Our Story Area Style
+8. Chefs Style
+9. Food Menu
+10. Reservation
+11. Blog
+12. Coustomer Review
+13. Contact
+14.Footer
+	14.1. Top Arrow
+-----------------------------------
+*/
+
+
+/* 
+----------------------------------------------
+1. General styles
+----------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Dancing+Script:400,700');
+body {
+	overflow-x: hidden;
+	font: 400 16px/1.8 'Crimson Text', serif;
+	color: #666;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	border: none;
+	text-decoration: none
+}
+
+
+/*
+-------------------------------------------
+1.1. Typography
+-------------------------------------------
+*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: 400 54px/1.2 'Crimson Text', serif;
+	margin: 0 0 20px;
+	color: #000;
+}
+
+h2 {
+	font-size: 48px;
+	margin: 0 0 18px;
+}
+
+h3 {
+	font-size: 40px;
+	margin: 0 0 15px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 30px;
+	margin: 0 0 10px;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 0 8px;
+	letter-spacing: 2px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 5px;
+}
+
+h1 {
+	font: 700 50px/1.2 'Dancing Script', cursive;
+	font-size: 55px;
+	font-weight: 700;
+	margin: 0 0 20px;
+	padding: 0;
+	border: 0;
+	color: #fff;
+}
+
+p {
+	font: 400 16px/1.2 'Crimson Text', serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color: #222;
+}
+
+
+/*
+-------------------------------------------
+1.2. Button Style
+-------------------------------------------
+*/
+
+.about-btn {
+	margin-top: 15px;
+	display: inline-block;
+	letter-spacing: 2px;
+	margin-bottom: 8px;
+}
+
+.about-btn a {
+	text-decoration: none;
+	color: #222;
+	border: 1px solid #222;
+	padding: 10px 25px;
+}
+
+.about-area .about-btn {
+	margin-top: 40px;
+}
+
+.reservation-area .book-btn {
+	margin-bottom: 10px;
+	text-align: center;
+	margin-top: 15px;
+	letter-spacing: 2px;
+}
+
+.reservation-area .book-btn a {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 25px;
+}
+
+.footer-top .submit-btn {
+	margin-top: 25px;
+	display: inline-block;
+	margin-bottom: 6px;
+	letter-spacing: 2px;
+}
+
+.footer-top .submit-btn a {
+	color: #222;
+	border: 1px solid #222;
+	padding: 10px 25px;
+}
+
+
+/*
+-------------------------------------------
+1.3. Transation Style
+-------------------------------------------
+*/
+
+.navbar-custom,
+.blog-img img {
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+
+.gallery-item i,
+.gallery-area .gallerybg1:before,
+.gallery-area .gallerybg2:before,
+.gallery-area .gallerybg3:before,
+.gallery-area .gallerybg4:before,
+.gallery-area .gallerybg5:before,
+.gallery-area .gallerybg6:before,
+.about-btn a,
+.soical-icons i,
+.reservation-area .book-btn a,
+.footer-top .submit-btn a,
+.footer-area .footer-icons i {
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+}
+
+
+/*
+-------------------------------------------
+1.4. Hover Style
+-------------------------------------------
+*/
+
+.gallery-item:hover i,
+.gallery-item:hover .gallerybg1:before,
+.gallery-item:hover .gallerybg2:before,
+.gallery-item:hover .gallerybg3:before,
+.gallery-item:hover .gallerybg4:before,
+.gallery-item:hover .gallerybg5:before,
+.gallery-item:hover .gallerybg6:before {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.about-btn:hover a,
+.soical-icons i:hover,
+.reservation-area .book-btn a:hover,
+.footer-top .submit-btn a:hover {
+	background: #4E5859;
+	color: #fff;
+}
+
+.footer-area .footer-icons i:hover {
+	color: #F0C963;
+}
+
+.blog-img:hover.blog-img img {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.blog {
+	padding-top: 37px;
+}
+
+
+/*
+-------------------------------------------
+1.5. Total Background Images
+-------------------------------------------
+*/
+
+.resturent-bg {
+	background-image: url(../img/best-city.jpg);
+}
+
+.gallery-area .gallerybg1 {
+	background-image: url(../img/gallery-1.jpg);
+}
+
+.gallery-area .gallerybg2 {
+	background-image: url(../img/gallery-2.jpg);
+}
+
+.gallery-area .gallerybg3 {
+	background-image: url(../img/gallery-3.jpg);
+}
+
+.gallery-area .gallerybg4 {
+	background-image: url(../img/gallery-4.jpg);
+}
+
+.gallery-area .gallerybg5 {
+	background-image: url(../img/gallery-5.jpg);
+}
+
+.gallery-area .gallerybg6 {
+	background-image: url(../img/gallery-6.jpg);
+}
+
+.reservation-area {
+	background-image: url(../img/banner.jpg);
+}
+
+
+/*
+-------------------------------------------
+2. Header Area Style
+-------------------------------------------
+*/
+
+.header-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+
+/*
+-------------------------------------------
+2.1. Navigation Style
+-------------------------------------------
+*/
+
+.navbar-custom {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	background: transparent;
+	padding: 10px 10px;
+}
+
+.navbar-custom .navbar-nav {
+	margin: 1px -15px 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav>li>a {
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.navbar-custom .navbar-brand {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.navbar-custom .nav .open>a,
+.navbar-custom .nav li a:focus>li>a:focus {
+	background: none;
+	outline: 0;
+	color: #fff;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .navbar-nav>li.active a {
+	background: none;
+	outline: 0;
+	color: #F5D76E;
+}
+
+.navbar-custom>li>a {
+	padding: 10px 20px;
+}
+
+.navbar-custom>li>a:hover {
+	background: rgba(0, 0, 0, .9);
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+.sticky .navbar-custom {
+	background: #222222;
+	padding: 0px 0px;
+}
+
+.sticky .navbar-custom li a {
+	color: #fff;
+}
+
+.sticky .navbar-brand {
+	color: #fff;
+}
+
+
+/*
+-------------------------------------------
+3. Slider Area Style
+-------------------------------------------
+*/
+
+.heading-title {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+}
+
+.table {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*
+-------------------------------------------
+4. About Area Style
+-------------------------------------------
+*/
+
+.about-area {
+	padding: 100px 0;
+}
+
+.about-area h4 {
+	margin-bottom: 30px;
+}
+
+.about-text p {
+	margin-top: -15px;
+}
+
+.about-img img {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.another img {
+	position: absolute;
+	top: 25%;
+	right: -15%;
+}
+
+
+/*
+-------------------------------------------
+5. Best Resturent Area Style
+-------------------------------------------
+*/
+
+.best-resturent {
+	padding-top: 15px;
+}
+
+.resturent-bg {
+	background-size: cover;
+	width: 100%;
+	padding: 100px 0;
+}
+
+.best-resturent h3 {
+	margin-top: -5px;
+	color: #fff;
+	margin-bottom: 17px;
+}
+
+.best-resturent h4 {
+	color: #fff;
+	margin-bottom: 17px;
+}
+
+.best-resturent p {
+	color: #fff;
+}
+
+.owl-nav {
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+.owl-nav [class*=owl-] {
+	color: #fff;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 10px;
+	margin-top: 35px;
+	text-transform: uppercase;
+	padding: 4px 35px;
+	display: inline-block;
+	background-color: #fff;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.owl-nav [class*=owl-]:hover {
+	background: #fff;
+	color: #222;
+}
+
+
+/*
+-------------------------------------------
+6. Gallery Area Style
+-------------------------------------------
+*/
+
+.gallery-area {
+	padding: 100px 0;
+}
+
+.gallery-title h4 {
+	margin: -8px 0 90px 0;
+	text-align: center;
+}
+
+.gallery-area .gallerybg1 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg2 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg3 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg4 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg5 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg6 {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery-area .gallerybg1:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-area .gallerybg2:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-area .gallerybg3:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-area .gallerybg4:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-area .gallerybg5:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-area .gallerybg6:before {
+	position: absolute;
+	content: "";
+	background: rgba(34, 34, 34, 0.72);
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+div.pp_default .pp_social {
+	display: none;
+}
+
+div.pp_default .pp_close {
+	background: url(../img/prettyPhoto/default/sprite.png) 2px 1px no-repeat;
+}
+
+.gallery-item {
+	margin-top: 10px;
+	position: relative;
+}
+
+.gallery-item i {
+	position: absolute;
+	top: 35%;
+	left: 45%;
+	text-align: center;
+	display: inline-block;
+	font-size: 25px;
+	color: #fff;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+}
+
+.gallery-meta {
+	padding: 25px 0;
+}
+
+.gallery-meta h6 {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.gallery-meta span {
+	text-align: right;
+	display: block;
+	margin-top: -30px;
+	font-weight: 700;
+}
+
+.gallery-meta p {
+	font-size: 14px;
+}
+
+
+/*
+-------------------------------------------
+7. Our Story Area Style
+-------------------------------------------
+*/
+
+.history-area {
+	margin-top: -40px;
+}
+
+.history-bg {
+	background: rgba(84, 84, 84, 0.14);
+	padding: 100px 0;
+}
+
+.history-details {
+	margin-top: -10px;
+}
+
+.history-details h4 {
+	margin-bottom: 25px;
+}
+
+.history-details p {
+	margin-bottom: 35px;
+}
+
+
+/*
+-------------------------------------------
+8. Chefs Area Style
+-------------------------------------------
+*/
+
+.chefs-area {
+	padding: 100px 0;
+}
+
+.chefs-bg {
+	margin-top: -9px;
+}
+
+.chefs-area h4 {
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.chefs-area h5 {
+	padding-top: 25px;
+}
+
+.single-chefs {
+	text-align: center;
+}
+
+.single-chefs img {
+	height: 200px;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.chefs-details {
+	text-align: center;
+}
+
+.chefs-details p {
+	margin-bottom: 34px;
+}
+
+.soical-icons {
+	padding-top: 10px;
+}
+
+.soical-icons i {
+	color: #222;
+	padding: 10px;
+	border: 1px solid #222;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+}
+
+.soical-icons i:hover {
+	background: #4E5859;
+	color: #fff;
+}
+
+
+/*
+-------------------------------------------
+9. Food Menu Area Style
+-------------------------------------------
+*/
+
+.foodmenu-bg {
+	padding: 100px 0;
+	background: #E7E7E7;
+}
+
+.foodmenu-area .title h4 {
+	margin-bottom: 80px;
+	margin-top: -7px;
+	text-align: center;
+}
+
+.foodmenu-area .menu-details h6 {
+	margin: 10px 0 10px 0;
+	display: inline-block;
+}
+
+.foodmenu-area .menu-details span {
+	text-align: right;
+	display: block;
+	margin-top: -30px;
+}
+
+.foodmenu-area .menu-details p {
+	border-bottom: 1px dashed rgba(34, 34, 34, 0.27);
+	padding: 11px 0 25px 0;
+	font-size: 14px;
+}
+
+.foodmenu-area .menu-details .border-fr {
+	border: none;
+}
+
+
+/*
+-------------------------------------------
+10. Reservation Area Style
+-------------------------------------------
+*/
+
+.reservation-area {
+	background-size: cover;
+	width: 100%;
+	margin-top: -38px;
+}
+
+.reservation-bg {
+	background: rgba(34, 34, 34, 0.58);
+	padding: 100px 0;
+}
+
+.reservation-area h4 {
+	margin: -7px 0 30px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.reservation-area form .form-group {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.reservation-area select {
+	margin-top: 10px 0 8px 0;
+	width: 100%;
+	height: 40px;
+	outline: 0;
+	outline-color: transparent;
+}
+
+
+/*
+-------------------------------------------
+11. Blog Area Style
+-------------------------------------------
+*/
+
+.blog-area {
+	margin-top: -8px;
+}
+
+.blog-area .blog-bg {
+	padding: 100px 0;
+}
+
+.blog-area .blog-title h4 {
+	margin-bottom: 85px;
+	text-align: center;
+}
+
+.blog-area .owl-carousel .owl-item img {
+	border: 1px rgba(34, 34, 34, 0.27);
+	margin-top: 10px;
+}
+
+.blog-area .blog-meta {
+	border: 1px dashed rgba(34, 34, 34, 0.27);
+	padding: 0 10px;
+}
+
+.blog-area .blog-meta h5 {
+	margin: 25px 0 21px 0;
+}
+
+.blog-area .blog-meta h5 a {
+	color: #222;
+	text-transform: uppercase;
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+}
+
+.blog-area .blog-meta p {
+	margin-bottom: 30px;
+}
+
+.blog-img {
+	overflow: hidden;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.blog-img img {
+	display: inline-block;
+	overflow: hidden;
+	transition: .5s;
+}
+
+
+/*
+-------------------------------------------
+12. Coustomer Review Area Style
+-------------------------------------------
+*/
+
+.coustomer-review {
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+.coustomer-bg {
+	background: rgba(34, 34, 34, 0.58);
+	padding: 100px 0;
+}
+
+.coustomer-review .title h4 {
+	margin: -10px 0 20px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.coustomer-review p {
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.coustomer-review i {
+	color: #FFCE44;
+	margin-bottom: 24px;
+}
+
+.coustomer-review span {
+	color: #fff;
+	display: block;
+}
+
+
+/*
+-------------------------------------------
+13. Footer Top /Contact Area Style
+-------------------------------------------
+*/
+
+.footer-top {
+	margin-top: -5px;
+}
+
+.footer-top .footertop-bg {
+	padding: 100px 0;
+}
+
+.footer-top .title h4 {
+	margin-bottom: 85px;
+	text-align: center;
+}
+
+.footer-top .form-group input {
+	width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	outline: 0;
+	outline-color: transparent;
+}
+
+.footer-top textarea#coment {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	outline: 0;
+	outline-color: transparent;
+}
+
+
+/*
+-------------------------------------------
+14. Footer Area Style
+-------------------------------------------
+*/
+
+.footer-area {
+	background: #222222;
+	text-align: center;
+}
+
+.footer-area .footer-bg {
+	padding: 20px 0;
+}
+
+.footer-area .footer-icons i {
+	padding: 8px;
+	color: #fff;
+}
+
+.footer-area p {
+	color: #fff;
+	font-size: 14px;
+}
+
+
+/*
+-------------------------------------------
+14.1. Top arrow scroll area
+-------------------------------------------
+*/
+
+.footer-area .top-arrow {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	top: auto;
+}
+
+.footer-area .top-arrow i a {
+	text-decoration: none;
+}
+
+.footer-area .top-arrow i {
+	font-size: 35px;
+	height: 38px;
+	color: #eff3f1;
+	width: 35px;
+	text-align: center;
+	cursor: pointer;
+	background: #4E5859;
+	border: 2px solid #0c0c0c;
+}
